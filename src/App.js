@@ -1,10 +1,18 @@
 import styled from "styled-components";
+import Cards from "./components/Cards";
+import Main from "./components/Main";
+import Navbar from "./components/Navbar";
+
+import PreviousNextMethods from "./components/Corusel";
 
 function App() {
   return (
     <div className="App">
       <Wrapper>
-        <h1>hello</h1>
+        <Navbar />
+        <Main />
+        <Cards />
+        <PreviousNextMethods/>
       </Wrapper>
     </div>
   );
@@ -12,7 +20,4 @@ function App() {
 
 export default App;
 
-
-const Wrapper = styled.div`
-  
-`
+const Wrapper = styled.div``;
